@@ -14,7 +14,7 @@ who'''
       steps {
         echo 'Este eun paso del la etapa2 de  este pipeline'
         sh '''hostname;
-curl -sk http://10.60.4.207/console --head;
+#curl -sk http://10.60.4.207:7001/console --head;
 echo "PROBANDO JENKINS";
 date;
 df -h .'''
