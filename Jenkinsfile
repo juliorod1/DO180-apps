@@ -1,7 +1,7 @@
 pipeline {
-  agent any
+  agent crontroller
   stages {
-    stage('staga1') {
+    stage('stage1') {
       steps {
         echo 'paso1'
       }
