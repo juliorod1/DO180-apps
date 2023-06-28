@@ -10,5 +10,11 @@ who'''
       }
     }
 
+    stage('Estapa2') {
+      steps {
+        echo 'Este eun paso del la etapa2 de  este pipeline'
+      }
+    }
+
   }
 }
