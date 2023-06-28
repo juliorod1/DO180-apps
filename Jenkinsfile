@@ -1,5 +1,5 @@
 pipeline {
-  agent crontroller
+  agent any
   stages {
     stage('stage1') {
       steps {
