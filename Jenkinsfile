@@ -13,12 +13,11 @@ who'''
     stage('Estapa2') {
       steps {
         echo 'Este eun paso del la etapa2 de  este pipeline'
-      }
-    }
-
-    stage('validando openshift sandbox') {
-      steps {
-        openshiftVerifyService(svcName: 'mongo', namespace: 'k-juliorod-dev', apiURL: 'https://api.sandbox-m4.g2pi.p1.openshiftapps.com:6443', authToken: 'sha256~JlcRprFMsp1krXmu2ELNQR7LsBYEI6kILe9USJA-trE')
+        sh '''hostname
+curl -sk http://10.60.4.207/console --head
+echo "PROBANDO JENKINS"
+date
+df -h .'''
       }
     }
 
