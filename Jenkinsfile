@@ -21,7 +21,7 @@ curl -sk http://10.60.4.207:7001/console --head'''
           }
         }
 
-        stage('') {
+        stage('etapa2 paralell') {
           agent any
           steps {
             sh '''echo stage en paralelo
